@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del curso</title>
+    <link rel="stylesheet" href="css/estilos_generales.css">
+    <link rel="stylesheet" href="css/estilos_detalle.css">
+</head>
+
+<body>
+    <header id="inicio">
+        <img class=logo src="img/logo.svg" alt="logo de Bit Academy">
+        <div>
+            <input class="buscador" type="search" name="q">
+            <ul class="resultados ocultar"></ul>
+        </div>
+        <div>
+            <img class="carrito" src="img/shopping_cart_black_48dp.svg" alt="carrito">
+            <span class="cantidad">0</span>
+            <ul class="compras ocultar">
+                <li id="sin-cursos">Todavía no se han obtenido cursos.</li>
+            </ul>
+        </div>
+    </header>
+    <nav> <!--MENU-->
+        <ul class="menu">
+            <li><img class="icono" src="img/home_white_48dp.svg" alt="icono de home"> <a href="index.html">Home</a></li>
+            <li><img class="icono" src="img/calendar_month_white_48dp.svg" alt="icono de calendario"><a
+                    href="calendario.html">Calendario de cursos</a></li>
+            <li><img class="icono" src="img/card_giftcard_white_48dp.svg" alt="icono de giftcard"><a
+                    href="gift_card.html">Gift Cards</a></li>
+            <li><img class="icono" src="img/contact_support_white_48dp.svg" alt="icono de contacto"><a
+                    href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article class="info_curso" id="detalles">
+            </article>
+            <article>
+                <h3>Docente</h3>
+                <div class="info_docente">
+                    <div class="foto_profesor">
+                        <img src="img/Elon-Musk-web.jpg" alt="foto del profesor del curso">
+                    </div>
+                    <div class="descripcion_profesor">
+                        <h4>ELON R. MUSK</h4>
+                        <img src="img/valoracion.png" alt="valoracion del docente">
+                        <p>A los 10 años se inició como programador, logrando vender su primer videojuego llamado
+                            Blastar a los 12 años por 500 dolares. Fundador de empresas como Paypal, Tesla, SpaceX y
+                            Solar
+                            City.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+    <h2>Cursos Recomendados</h2>
+    <section class="cursos-recomendados">
+        <div class="destacados" id="otros_cursos">
+           
+        </div>
+    </section>
+        <div class="popup ocultar">
+            <p>¡Felicitaciones! Agregaste:</p>
+            <div id="popup_mostrar"></div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <h5>Copyright 2023 - Tecnicatura web - UNLAM</h5>
+            <li>Arroyo, Jonatan David - 38.700.536</li>
+            <li>Lee Gonzáles, Mariana - 42.193.753</li>
+            <li>Riveira González, María Constanza - - 34.114.124</li>
+        </ul>
+        <ul>
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Acerca de Bit Academy</a></li>
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Cancelar una compra</a></li>
+        </ul>
+        <ul class="redes">
+            <li><a href="https://www.instagram.com/" target="_blank"> <img src="img/instagram.svg"
+                        alt="link hacia instagram"></a></li>
+            <li> <a href="https://es-la.facebook.com/" target="_blank"> <img src="img/facebook.svg"
+                        alt="link hacia facebook"> </a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"> <img src="img/twitter.svg"
+                        alt="link hacia twitter"> </a></li>
+        </ul>
+    </footer>
+    <script src="js/detalle.js"></script>
+</body>
+
+</html>

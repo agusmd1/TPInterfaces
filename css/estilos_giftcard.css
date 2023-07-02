@@ -1,0 +1,375 @@
+:root {
+    --azul_ppal: #5237C7;
+    --azul_oscuro: #211650;
+    --sombra: #aca1de;
+    --detalle: #FD861D;
+    --neutro: #D3D3D3;
+}
+
+main {
+    margin: 3.125em;
+    padding: 1.875em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    background-color: #efefef;
+
+}
+
+/********** VISTA PREVIA ************/
+.vista_previa {
+    position: relative;
+    text-align: center;
+    width: 30em;
+    height: 30em;
+}
+
+.resultado {
+    width: 100%;
+    height: 16em;
+    background-color: gray;
+    border-radius: 0.625em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.875em;
+}
+
+.resultado p {
+    color: white;
+    text-shadow: 0.438em 0.438em 0.938em black;
+}
+
+.vista-monto {
+    position: absolute;
+    right: 0;
+    border-radius: 0.625em;
+    color: white;
+    background-color: var(--azul_oscuro);
+    font-size: 1.875em;
+    padding: 0.313em;
+}
+
+.abajo-derecha {
+    bottom: 0;
+}
+
+.arriba-izquierda {
+    right: unset;
+    left: 0;
+}
+
+/********* FORM ***************/
+.titulo {
+    font-size: 1.563em;
+    color: var(--azul_oscuro);
+}
+
+form h4 {
+    color: var(--azul_ppal);
+    font-size: 1.25em;
+    margin-bottom: 0.625em;
+    margin-top: 0.625em;
+}
+
+.colores,
+.fuente,
+.monto,
+.ubicacion,
+.titulo,
+.destino {
+    width: 90%;
+    margin-bottom: 1.25em;
+}
+
+.destino {
+    width: 90%;
+    padding: 0.625em;
+    border: 0.063em solid #ccc;
+    border-radius: 0.313em;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+}
+
+.destino:focus {
+    outline: none;
+    border: 0.125em solid var(--azul_ppal);
+    box-shadow: 0 0 0.313em var(--sombra);
+}
+
+/*********** COLORES ***********/
+.colores {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    text-align: center;
+}
+
+.verde {
+    background-color: green;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.azul {
+    background-color: blue;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.amarillo {
+    background-color: yellow;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.rojo {
+    background-color: red;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.naranja {
+    background-color: orange;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/*********** FUENTE *********/
+.fuente {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fuente p {
+    font-size: 1.25em;
+}
+
+/*********** MONTO **********/
+.monto {
+    display: flex;
+    gap: 0.625em;
+}
+
+.monto select {
+    outline: none;
+    border-radius: 0.313em;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+}
+
+#monto:focus {
+    border: 0.125em solid var(--azul_ppal);
+}
+
+/*********** UBICACION **********/
+.ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 0.625em;
+    text-align: center;
+}
+
+.marco1 {
+    width: 4.375em;
+    height: 3.75em;
+    background-color: gray;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border: 1.0.313em solid var(--azul_oscuro);
+    border-radius: 0.313em;
+}
+
+.marco2 {
+    width: 4.375em;
+    height: 3.75em;
+    background-color: gray;
+    border: 1.0.313em solid var(--azul_oscuro);
+    border-radius: 0.313em;
+}
+
+.marco3 {
+    width: 4.375em;
+    height: 3.75em;
+    background-color: gray;
+    display: flex;
+    justify-content: end;
+    border: 1.0.313em solid var(--azul_oscuro);
+    border-radius: 0.313em;
+}
+
+.rectangulo {
+    width: 1.563em;
+    height: 0.938em;
+    background-color: white;
+    border-radius: 0.313em;
+
+}
+
+/********** FONDO ************/
+.fondo {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 0.625em;
+    text-align: center;
+}
+
+.fondo1 {
+    width: 4.375em;
+    height: 3.75em;
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    border-radius: 0.313em;
+}
+
+.fondo2 {
+    width: 4.375em;
+    height: 3.75em;
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    border-radius: 0.313em;
+}
+
+.fondo3 {
+    width: 4.375em;
+    height: 3.75em;
+    background-image: url(../img/fondo3.png);
+    background-size: cover;
+    border-radius: 0.313em;
+}
+
+.fondo4 {
+    width: 4.375em;
+    height: 3.75em;
+    background-image: url(../img/fondo4.jpg);
+    background-size: cover;
+    border-radius: 0.313em;
+}
+
+.fondo5 {
+    width: 4.375em;
+    height: 3.75em;
+    background-image: url(../img/fondo5.jpg);
+    background-size: cover;
+    border-radius: 0.313em;
+}
+
+/*************** CONFIRMAR **************/
+.boton {
+    border: none;
+    margin-top: 1.563em;
+    font-size: 0.75em;
+}
+
+/*** PARA CAMBIAR EL COLOR DEL DESTINATARIO EN JS ***/
+#nombre-destinatario {
+    font-size: 1.25em;
+    text-shadow: 0.438em 0.438em 0.938em black;
+}
+
+.dest-verde {
+    color: green;
+}
+
+.dest-naranja {
+    color: orange;
+}
+
+.dest-rojo {
+    color: red;
+}
+
+.dest-azul {
+    color: blue;
+}
+
+.dest-amarillo {
+    color: yellow;
+}
+
+/*** PARA CAMBIAR EL FONDO DE LA PREVIEW EN JS ***/
+.prev1 {
+    background-image: url(../img/fondo1.jpg);
+}
+
+.prev2 {
+    background-image: url(../img/fondo2.jpg);
+}
+
+.prev3 {
+    background-image: url(../img/fondo3.png);
+}
+
+.prev4 {
+    background-image: url(../img/fondo4.jpg);
+}
+
+.prev5 {
+    background-image: url(../img/fondo5.jpg);
+}
+
+/***************************Responsive*****************************/
+@media screen and (max-width:60em) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        transform: scale(0.9);
+        margin: 0px;
+    }
+    .destino{
+        width: 90%;
+        margin: auto;
+    }
+    .colores{
+        justify-content: space-evenly;
+    }
+    .fuente{
+        justify-content: space-evenly;
+    }
+    .fondo{
+        gap: 5px;
+        transform: scale(0.9);
+    }
+    .ubicacion{
+        justify-content: center;
+    }
+    .boton {
+        width: 100%;
+        font-size: 130%;
+    }
+    .seleccion{
+        width: 100%;
+    }
+    .resultado {
+        width: 100%;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vista_previa {
+        width: 100%;
+        height: 100%;
+    }
+
+    .abajo-derecha {
+        bottom: 0.65em;
+    }
+
+}

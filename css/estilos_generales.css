@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --azul_ppal: #5237C7;
+    --azul_oscuro: #211650;
+    --sombra: #aca1de;
+    --detalle: #FD861D;
+    --neutro: #D3D3D3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.938em 1.25em;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    width: 17%;
+}
+
+.buscador {
+    background-image: url(../img/search_black_48dp.svg);
+    background-repeat: no-repeat;
+    background-size: 1.063em 1.063em;
+    padding: 0.438em 0.625em 0.438em 11.25em;
+    background-position: 0.563em center;
+    background-color: var(--neutro);
+    border-style: none;
+    border-radius: 0.938em;
+}
+
+.carrito {
+    width: 1.875em;
+}
+
+.grupo {
+    position: relative;
+}
+
+.cantidad {
+    position: absolute;
+    /* top: 0.625em; */
+    width: 1em;
+    text-align: center;
+    bottom: 2.7em;
+    background-color: var(--detalle);
+    color: #ffffff;
+    padding: 0.188em;
+    border-radius: 50%;
+    font-size: 0.625em;
+}
+
+.menu {
+    background-color: var(--azul_ppal);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.625em;
+    align-items: center;
+    box-shadow: 0px 0.313em 0.625em var(--sombra);
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.icono {
+    width: 1.25em;
+    padding-right: 0.125em;
+}
+
+a:hover {
+    color: var(--azul_oscuro);
+    cursor: pointer;
+}
+
+.arriba {
+    display: block;
+    z-index: 1000;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: var(--azul_oscuro);
+    background-image: url(../img/arrow_upward_white_48dp.svg);
+    box-shadow: 0.125em 0.125em 0.125em var(--sombra);
+    background-size: contain;
+    position: fixed;
+    right: 0.625em;
+    bottom: 0.625em;
+    transition: 0.5;
+}
+
+.arriba:hover {
+    background-color: var(--detalle);
+}
+
+.boton {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.313em 0.625em 0.313em 0.625em;
+    color: var(--neutro);
+    background-color: var(--azul_ppal);
+    border: none;
+    border-radius: 0.625em;
+    text-align: center;
+    font-size: 0.625em;
+    transition: 0.5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--detalle);
+    color: var(--azul_oscuro);
+}
+
+footer {
+    background-color: var(--azul_ppal);
+    display: flex;
+    justify-content: space-around;
+    padding: 1.25em;
+}
+
+footer li {
+    list-style: none;
+    font-size: 0.813em;
+    padding: 0.125em;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes img {
+    width: 1.875em;
+    padding: 0.625em;
+}
+
+.ocultar {
+    display: none;
+}
+
+/***********para los resultados del buscador************/
+.resultados {
+    position: absolute;
+    top: 3.125em;
+    padding: 1.25em;
+    list-style: none;
+    background-color: white;
+    border-radius: 0px 0px 1.25em 1.25em;
+}
+
+.resultados li {
+    margin-top: 0.313em;
+    border-bottom: 0.063em solid var(--neutro);
+    z-index: 999;
+}
+
+/***************para las compras del carrito***********************/
+.compras {
+    position: absolute;
+    right: 0px;
+    top: 3.125em;
+    padding: 1.25em;
+    list-style: none;
+    background-color: white;
+    border-radius: 1.25em 0px 0px 1.25em;
+    border: 0.125em solid var(--azul_ppal);
+}
+
+.compras li {
+    margin-top: 0.313em;
+    border-bottom: 0.063em solid var(--neutro);
+    z-index: 9999;
+}
+
+/***************************Responsive*****************************/
+ @media screen and (max-width:60em) {
+    
+
+    #inicio {
+        font-size: 100%;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .menu {
+        flex-direction: column;
+        font-size: 100%;
+        gap: 1em;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .grupo {
+        z-index: -1;
+    }
+
+    footer {
+        height: 100%;
+        font-size: 100%;
+        flex-direction: column;
+        align-items: center;
+   
+    }
+
+    footer ul {
+        text-align: center;
+        font-size: 130%;
+    }
+
+    footer ul:first-child {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    footer ul:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+
+    }
+
+    footer ul:last-child {
+        font-size: 100%;
+        margin: 0;
+
+    }
+
+    .arriba {
+        font-size: 140%;
+    }
+}

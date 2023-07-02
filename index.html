@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Academy - Inicio</title>
+    <link rel="stylesheet" href="css/estilos_generales.css">
+    <link rel="stylesheet" href="css/estilos_index.css">
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+
+<body>
+    <header id="inicio">
+        <img class=logo src="img/logo.svg" alt="logo de Bit Academy">
+        <div>
+            <input class="buscador" type="search" name="q">
+            <ul class="resultados ocultar"></ul>
+        </div>
+        <div  class="grupo">
+        <div>
+            <img class="carrito" src="img/shopping_cart_black_48dp.svg" alt="carrito">
+            <span class="cantidad">0</span>
+            
+        </div>
+            <ul class="compras ocultar">
+                <li id="sin-cursos">Todavía no se han obtenido cursos.</li>
+            </ul>
+        </div>
+    </header>
+    <nav> <!--MENU-->
+        <ul class="menu">
+            <li><img class="icono" src="img/home_white_48dp.svg" alt="icono de home"> <a href="index.html">Home</a></li>
+            <li><img class="icono" src="img/calendar_month_white_48dp.svg" alt="icono de calendario"><a
+                    href="calendario.html">Calendario de cursos</a></li>
+            <li><img class="icono" src="img/card_giftcard_white_48dp.svg" alt="icono de giftcard"><a
+                    href="gift_card.html">Gift Cards</a></li>
+            <li><img class="icono" src="img/contact_support_white_48dp.svg" alt="icono de contacto"><a
+                    href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--CAROUSEL-->
+        <section>
+            <h1>Cursos disponibles</h1>
+            <section>
+                <div class="contenedor-c">
+                    <div class="slideshow">
+                        <div class=" slide slide1"></div>
+                        <div class=" slide slide2"></div>
+                        <div class=" slide slide3"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--PASOS PARA INSCRIBIRSE-->
+        <section>
+            <h2>Cómo comprar</h2>
+            <ol class="pasos">
+                <li>
+                    <img src="img/search-find-browser-svgrepo-com.svg" alt="imagen ilustrativa del paso 1">
+                    <h4>Elegí el curso que más te guste</h4>
+                    <p>Buscá un tema y encontrá cientos de opciones disponibles para vos.</p>
+                </li>
+                <li>
+                    <img src="img/my-profile-browser-svgrepo-com.svg" alt="imagen ilustrativa del paso 2">
+                    <h4>Completá tus datos para inscribirte</h4>
+                    <p>También podés anotar a tus amigos.</p>
+                </li>
+                <li>
+                    <img src="img/payment-cashless-card-credit-svgrepo-com.svg" alt="imagen ilustrativa del paso 3">
+                    <h4>¡Pagá y empezá a aprender!</h4>
+                    <p> Acreditación inmediata. Es rápido y seguro, siempre.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!--CURSOS DESTACADOS-->
+        <section>
+            <h2> Cursos destacados</h2>
+            <div class="destacados" id="container">
+                
+            </div>
+        </section>
+
+        <!--MEDIOS DE PAGO-->
+        <aside>
+            <h3>Podés pagar tus compras con cualquiera de estos medios</h3>
+            <div class="medios_pago">
+                <img src="img/Visa_Logo.png" alt="visa">
+                <img src="img/Mastercard-logo.png" alt="mastercard">
+                <img src="img/amex.png" alt="america express">
+                <img src="img/Mercado-Pago-Logo.png" alt="mercadopago">
+                <img src="img/logo-Paypal.png" alt="paypal">
+            </div>
+        </aside>
+        <a href="#inicio" class="arriba"></a>
+    </main>
+    <footer>
+        <ul>
+            <h5>Copyright 2023 - Tecnicatura web - UNLAM</h5>
+            <li>Arroyo, Jonatan David - 38.700.536</li>
+            <li>Lee Gonzáles, Mariana - 42.193.753</li>
+            <li>Riveira González, María Constanza - - 34.114.124</li>
+        </ul>
+        <ul>
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Acerca de Bit Academy</a></li>
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Cancelar una compra</a></li>
+        </ul>
+        <ul class="redes">
+            <li><a href="https://www.instagram.com/" target="_blank"> <img src="img/instagram.svg"
+                        alt="link hacia instagram"></a></li>
+            <li> <a href="https://es-la.facebook.com/" target="_blank"> <img src="img/facebook.svg"
+                        alt="link hacia facebook"> </a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"> <img src="img/twitter.svg"
+                        alt="link hacia twitter"> </a></li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-latest.js"></script>
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(".slideshow").slick({
+            mobileFirst: true,
+            dots: true,
+            fade: true,
+            arrows: false,
+            speed: 500,
+            infite: true,
+            autoplay: true
+
+        });
+    </script>
+</body>
+
+</html>

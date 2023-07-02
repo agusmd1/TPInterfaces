@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalá un curso</title>
+    <link rel="stylesheet" href="css/estilos_generales.css">
+    <link rel="stylesheet" href="css/estilos_giftcard.css">
+</head>
+
+<body>
+    <header id="inicio">
+        <img class=logo src="img/logo.svg" alt="logo de Bit Academy">
+        <div>
+            <input class="buscador" type="search" name="q">
+            <ul class="resultados ocultar"></ul>
+        </div>
+        <div class="grupo">
+            <img class="carrito" src="img/shopping_cart_black_48dp.svg" alt="carrito">
+            <span class="cantidad">0</span>
+            <ul class="compras ocultar">
+                <li id="sin-cursos">Todavía no se han obtenido cursos.</li>
+            </ul>
+        </div>
+    </header>
+    <nav> <!--MENU-->
+        <ul class="menu">
+            <li><img class="icono" src="img/home_white_48dp.svg" alt="icono de home"> <a href="index.html">Home</a></li>
+            <li><img class="icono" src="img/calendar_month_white_48dp.svg" alt="icono de calendario"><a
+                    href="calendario.html">Calendario de cursos</a></li>
+            <li><img class="icono" src="img/card_giftcard_white_48dp.svg" alt="icono de giftcard"><a
+                    href="gift_card.html">Gift Cards</a></li>
+            <li><img class="icono" src="img/contact_support_white_48dp.svg" alt="icono de contacto"><a
+                    href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="vista_previa">
+            <div>
+                <span class="vista-monto">$0000.-</span>
+                <div class="resultado">
+                    <p>GIFT CARD para</p>
+                    <h2 id="nombre-destinatario" class="dest-verde"></h2>
+                </div>
+            </div>
+            <h5>VISTA PREVIA DEL RESULTADO DE PERSONALIZACIÓN</h5>
+        </section>
+        <section class="seleccion">
+            <form action="">
+                <h1 class="titulo">Personalización de Giftcard</h1>
+                <input class="destino" type="text" name="nombre" placeholder="Nombre Destinatario" autofocus>
+                <h4>Color</h4>
+                <div class="colores">
+                    <label for="Verde">
+                        <div class="verde"></div>
+                        <input type="radio" value="verde" id="Verde" name="color" checked>
+                    </label>
+                    <label for="Naranja">
+                        <div class="naranja"></div>
+                        <input type="radio" value="naranja" id="Naranja" name="color">
+                    </label>
+                    <label for="Rojo">
+                        <div class="rojo"></div>
+                        <input type="radio" value="rojo" id="Rojo" name="color">
+                    </label>
+                    <label for="Azul">
+                        <div class="azul"></div>
+                        <input type="radio" value="azul" id="Azul" name="color">
+                    </label>
+                    <label for="Amarillo">
+                        <div class="amarillo"></div>
+                        <div class="Amarillo"></div>
+                        <input type="radio" value="amarillo" id="Amarillo" name="color">
+                    </label>
+                </div>
+                <h4>Tamaño de fuente</h4>
+                <div class="fuente">
+                    <label for="tamanio1">
+                        <p>20px</p>
+                        <input type="radio" value="20px" id="tamanio1" name="tamanio" checked>
+                    </label>
+                    <label for="tamanio2">
+                        <p>28px</p>
+                        <input type="radio" value="28px" id="tamanio2" name="tamanio">
+                    </label>
+                    <label for="tamanio3">
+                        <p>32px</p>
+                        <input type="radio" value="32px" id="tamanio3" name="tamanio">
+                    </label>
+                    <label for="tamanio4">
+                        <p>48px</p>
+                        <input type="radio" value="48px" id="tamanio4" name="tamanio">
+                    </label>
+                    <label for="tamanio5">
+                        <p>60px</p>
+                        <input type="radio" value="60px" id="tamanio5" name="tamanio">
+                    </label>
+                </div>
+                <div class="monto">
+                    <h4>Monto $</h4>
+                    <select name="monto" id="monto" required>
+                        <option value="" selected disabled>Seleccioná una opción</option>
+                        <option value="10000">10,000.00</option>
+                        <option value="20000">20,000.00</option>
+                        <option value="30000">30,000.00</option>
+                    </select>
+                </div>
+                <h4>Ubicacion</h4>
+                <div class="ubicacion">
+                    <label for="ubicacion1">
+                        <div class="marco1">
+                            <div class="rectangulo"></div>
+                        </div>
+                        <input type="radio" value="1" id="ubicacion1" name="ubicacion">
+                    </label>
+                    <label for="ubicacion2">
+                        <div class="marco2">
+                            <div class="rectangulo"></div>
+                        </div>
+                        <input type="radio" value="2" id="ubicacion2" name="ubicacion">
+                    </label>
+                    <label for="ubicacion3">
+                        <div class="marco3">
+                            <div class="rectangulo"></div>
+                        </div>
+                        <input type="radio" value="3" id="ubicacion3" name="ubicacion" checked>
+                    </label>
+                </div>
+                <h4>Fondo</h4>
+                <div class="fondo">
+
+                    <label for="fondo1">
+                        <div class="fondo1"></div>
+                        <input type="radio" value="1" id="fondo1" name="fondo">
+                    </label>
+                    <label for="fondo2">
+                        <div class="fondo2"></div>
+                        <input type="radio" value="2" id="fondo2" name="fondo">
+                    </label>
+                    <label for="fondo3">
+                        <div class="fondo3"></div>
+                        <input type="radio" value="3" id="fondo3" name="fondo">
+                    </label>
+                    <label for="fondo4">
+                        <div class="fondo4"></div>
+                        <input type="radio" value="4" id="fondo4" name="fondo">
+                    </label>
+                    <label for="fondo5">
+                        <div class="fondo5"></div>
+                        <input type="radio" value="5" id="fondo5" name="fondo">
+                    </label>
+                </div>
+                <input class="boton" type="submit" value="CONFIRMAR">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <h5>Copyright 2023 - Tecnicatura web - UNLAM</h5>
+            <li>Arroyo, Jonatan David - 38.700.536</li>
+            <li>Lee Gonzáles, Mariana - 42.193.753</li>
+            <li>Riveira González, María Constanza - - 34.114.124</li>
+        </ul>
+        <ul>
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Acerca de Bit Academy</a></li>
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Cancelar una compra</a></li>
+        </ul>
+        <ul class="redes">
+            <li><a href="https://www.instagram.com/" target="_blank"> <img src="img/instagram.svg"
+                        alt="link hacia instagram"></a></li>
+            <li> <a href="https://es-la.facebook.com/" target="_blank"> <img src="img/facebook.svg"
+                        alt="link hacia facebook"> </a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"> <img src="img/twitter.svg"
+                        alt="link hacia twitter"> </a></li>
+        </ul>
+    </footer>
+    <script src="js/giftcard.js"></script>
+</body>
+
+</html>

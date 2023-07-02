@@ -1,0 +1,318 @@
+:root{
+    --azul_ppal: #5237C7;
+    --azul_oscuro: #211650;
+    --sombra: #aca1de;
+    --detalle: #FD861D;
+    --neutro: #D3D3D3;
+}
+h1{
+    color: var(--azul_oscuro);
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+    color: var(--azul_ppal);
+    text-align: center;
+    padding: 10px;
+}
+h3{
+    font-size: 20px;
+    color: var(--azul_ppal);
+    padding: 10px;
+}
+.info_general .boton{
+    margin-top: 10px;
+}
+.info_curso{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin: 50px 0px 50px 0px;
+    
+}
+.info_general{
+   width: calc(60% - 30px);
+}
+.info_general{
+    margin-top: 15px;
+    font-size: 15px;
+}
+.info_general p{
+    padding-top: 5px;
+}
+.imagen_curso{
+    width: calc(40% - 30px);
+    padding: 0px 20px 20px 20px;
+}
+.imagen_curso img{
+    border-radius: 15px;
+    max-width: 100%;    
+}
+.contenidos{
+    text-align: center;
+    border: 2px solid var(--azul_oscuro);
+    width: 30%;
+    border-radius: 15px;
+    margin: auto auto 20px auto;
+}
+.lista_contenidos{
+    list-style: none;
+}
+
+/**********Para el acordeon************/
+.unidad{
+    color: gray;
+    border-top: 1px solid var(--neutro);
+    background-image: url(../img/expand_more_black_48dp.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+    padding: 10px;
+}
+.unidad:hover{
+    color: var(--azul_ppal);
+    cursor: pointer;
+}
+.detalle_unidad a{
+    display: block;
+    text-align: left;
+    padding: 5px 5px 5px 40px;
+    font-size: 12px;
+    border-top: 1px solid var(--sombra);
+}
+.video{
+    background-image: url(../img/video_library_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 0;
+    background-size: 20px;
+    background-position-y: center;
+}
+.apunte{
+    background-image: url(../img/picture_as_pdf_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 0;
+    background-size: 20px;
+    background-position-y: center;
+}
+.examen{
+    background-image: url(../img/inventory_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 0;
+    background-size: 20px;
+    background-position-y: center;
+}
+.contraer-contenido{
+    background-image: url(../img/chevron_right_FILL0_wght400_GRAD0_opsz48.svg);
+}
+.d-none{
+    display: none;
+}
+/***************************************************************************/
+
+.info_docente{
+    display: flex;
+    background-color: var(--neutro);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.foto_profesor{
+    text-align: center;
+    width:15%;
+    margin-right:20px;
+}
+.foto_profesor img{
+    width: 100%;
+    border-radius: 50%;
+}
+.descripcion_profesor img{
+    width: 100px;
+}
+.destacados{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.producto{
+    width: calc(20% - 20px);
+    margin: 20px 0px;
+    padding: 20px;
+    border: 5px solid var(--azul_ppal);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 15px var(--sombra);
+    display: flex;
+    flex-direction: column;
+}
+.imagen{
+    position: relative;
+}
+.imagen img{
+    border-radius: 15px;
+    height: 100px;
+    width: 100%;
+}
+.precio{
+    background-color: var(--detalle);
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    padding: 0px 4px 0px 4px;
+    border-radius: 15px 0px 0px 15px;
+}
+.horas{
+    background-color: var(--detalle);
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 0px 4px 0px 4px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.producto_info{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.producto_info p{
+    font-size: 25px;
+}
+.producto_detalle{
+    text-align: right;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.boton{
+
+    align-self: flex-end;
+}
+
+/************Para el pop up**********************/
+.popup{
+    background-color: white;
+    border: 5px solid var(--azul_ppal);
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px var(--sombra);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 400px;
+    height: 200px;
+    top: calc(50% - 100px); 
+    left: calc(50% - 200px);
+}
+.popup-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.popup-texto{
+    width: calc(50% - 20px);
+}
+.popup-texto h4, p{
+    padding-bottom: 5px;
+}
+.popup img{
+    width: 50%;
+    border-radius: 10px;
+}
+.popup .boton{
+    margin-top: 20px;
+}
+.ocultar{
+    display: none;
+}
+
+@media screen and (max-width:1047px) {
+.producto_detalle{
+    margin-left:0;
+    text-align: left;
+
+}
+.producto_info{
+    text-align: left;
+}
+
+.horas{
+    display: none;
+}
+.info_curso{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.info_docente{
+    margin-bottom: 0;
+}
+}
+@media screen and (max-width:1003px){
+    
+    .destacados{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:991px){
+    .logo{
+        width: 100px;
+    }
+    .foto_profesor img{
+        width: 100px;
+    }
+    .cursos-recomendados{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .contenidos{
+        width: 50%;
+    }
+    .destacados{
+        flex-wrap: wrap;
+    }
+    .producto{
+        width: 200px;
+    }
+}
+@media screen and (max-width:669px){
+    .info_docente{
+        flex-direction: column;
+    }
+    .info_general{
+        width: 80%;
+    }
+    .info_curso{
+        margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    }
+    .imagen_curso{
+        width: 80%;
+        margin: auto;
+    }
+    .buscador{
+        padding: 0.438em 0.625em 0.438em 1.25em;
+    }
+    .menu li{
+        transform: scale(0.8);
+    }
+    .popup {
+        transform: scale(0.8);
+        padding: 0;
+    }
+    .popup-info{
+        margin: 0;
+    }
+    .boton {
+            transform: scale(1.5);
+    margin-left: 50px;
+    }
+}
