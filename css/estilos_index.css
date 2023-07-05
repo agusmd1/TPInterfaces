@@ -139,8 +139,7 @@ li img {
 }
 
 .boton {
-    width: 100px;
-    height: 50px;
+    width: 7em;
     align-self: flex-end;
 }
 

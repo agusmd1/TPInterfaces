@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   
+    <title>Bit Academy - Cursos</title>
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+
+    <link rel="stylesheet" href="css/estilos_generales.css">
+    <link rel="stylesheet" href="css/estilos_cursos.css">
+    <link rel="stylesheet" href="css/estilos_nav_footer.css">
+
+
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fa-brands.min.css">
+
+   
+
+
+</head>
+
+<body>
+
+    <header id="inicio">
+        <img class=logo src="img/logo.svg" alt="logo de Bit Academy">
+        <div>
+            <input class="buscador" type="search" name="q">
+            <ul class="resultados ocultar"></ul>
+        </div>
+        <div class="grupo">
+            <img class="carrito" src="img/shopping_cart_black_48dp.svg" alt="carrito">
+            <span class="cantidad">0</span>
+            <ul class="compras ocultar">
+                <li id="sin-cursos">Todavía no se han obtenido cursos.</li>
+            </ul>
+        </div>
+
+
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Beca</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+        <h1>¿Porque BITAcademy?</h1>
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/ilustration-postula.svg" alt="Curso 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Postula para miles de trabajos en nuestro portal de empleo IT.</h5>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/ilustration-acompañamiento.svg" alt="Curso 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Recibe acompañamiento en cada momento de tus estudios. <br>
+
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/ilustration-postula.svg" alt="Curso 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Asegura tu aprendizaje con grupos reducidos de max. 30 estudiantes.
+                            </h5>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1>CURSOS DISPONIBLES</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/html.jpg" alt="Curso 1">
+                        <div class="card-body">
+                            <h5 class="card-title">CURSO BASICO HTML</h5>
+                            <p class="card-text">Aprenderas los conceptos basico de html</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/css.jpg" alt="Curso 2">
+                        <div class="card-body">
+                            <h5 class="card-title">CURSO BASICO CSS</h5>
+                            <p class="card-text">Aprenderas los conceptos basico de css</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/java.jpg" alt="Curso 3">
+                        <div class="card-body">
+                            <h5 class="card-title">CURSO BASICO JAVA</h5>
+                            <p class="card-text">Aprenderas los conceptos basico de java</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/react.jpg" alt="Curso 3">
+                        <div class="card-body">
+                            <h5 class="card-title">CURSO BASICO REACT</h5>
+                            <p class="card-text">Aprenderas los conceptos basico de react</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/python.jpg" alt="Curso 3">
+                        <div class="card-body">
+                            <h5 class="card-title">CURSO BASICO PYTHON</h5>
+                            <p class="card-text">Aprenderas los conceptos basico de python</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/csharp-800x445.jpg" alt="Curso 3">
+                        <div class="card-body">
+                            <h5 class="card-title">CURSO BASICO C#</h5>
+                            <p class="card-text">Aprenderas los conceptos basico de c# </p>
+                            
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center pb-4">
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+
+        </div>
+
+
+
+
+
+        <a href="#inicio" class="arriba"></a>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2023 BIT Academy</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Sobre la Academia</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Términos y condiciones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <img src="img/instagram.svg" alt="Facebook">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <img src="img/facebook.svg" alt="Twitter">
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <img src="img/twitter.svg" alt="Instagram">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="js/calendario.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

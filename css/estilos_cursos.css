@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
+:root {
+    --azul_ppal: #5237C7;
+    --azul_oscuro: #211650;
+    --sombra: #aca1de;
+    --detalle: #FD861D;
+    --neutro: #D3D3D3;
+}
+
+/* BOTON QUE PASA LOS DIAS EN EL CALENDARIO, EL DE AL LADO DE TODAY*/
+.fc-button-primary {
+    color: #3275f1;
+    background-color: white;
+    border-color: #FD861D;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.625em 3.125em;
+}
+
+h1 {
+    color: var(--azul_oscuro);
+    font-size: 2.5em;
+    font-style: italic;
+    margin-top: 1.875em;
+    margin-bottom: 1.25em;
+    text-align: center;
+}
+
+.contenedor-calendario {
+    width: 90%;
+    margin: 1em auto;
+}
+
+.fc .fc-toolbar>*>:first-child {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    animation: text-color 0.9s infinite;
+    animation-direction: alternate;
+}
+
+.fc-event,
+.fc-event:hover {
+    color: #fff;
+}
+
+/* COLOR DEL FONDO DE LOS CURSOS*/
+.fc-event {
+    background-color: #7a489f !important;
+    border: #7a489f !important;
+
+}
+
+/* cartel del today*/
+.fc-button-primary:disabled {
+    background-color: white;
+    border-color: #b06268;
+}
+
+/**/
+
+/*color de los dias del calendario*/
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+    float: right;
+    color: aliceblue;
+}
+
+/*LOS COLORES DE LOS DIAS DE LA SEMANA*/
+.fc-view-container *,
+.fc-view-container :after,
+.fc-view-container :before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    color: #1D438A;
+    box-sizing: content-box;
+}
+
+.fc-event .fc-content {
+    position: relative;
+    z-index: 2;
+}
+
+.fc-day-grid-event .fc-content,
+.fc-icon,
+.fc-row.fc-rigid,
+.fc-time-grid-event {
+    overflow: hidden;
+}
+
+.fc .fc-axis,
+.fc button,
+.fc-day-grid-event .fc-content,
+.fc-list-item-marker,
+.fc-list-item-time,
+.fc-time-grid-event .fc-time,
+.fc-time-grid-event.fc-short .fc-content {
+    white-space: nowrap;
+}
+
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-list-heading td {
+    border-color: #cc2cac;
+}
+
+.fc-day-grid-event .fc-content {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.fc-event .fc-content {
+    position: relative;
+    z-index: 2;
+}
+
+.fc-view-container *,
+.fc-view-container :after,
+.fc-view-container :before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.fc-view-container *,
+.fc-view-container :after,
+.fc-view-container :before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    color: #1D438A;
+    box-sizing: content-box;
+}
+
+.fc-view-container *,
+.fc-view-container *:before,
+.fc-view-container *:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+user agent stylesheet div {
+    display: block;
+}
+
+/* LETRA DE LOS CURSOS ADENTRO DEL CALENDARIO*/
+span.fc-title {
+    color: aliceblue;
+}
+
+
+div.fc-view-container>div>table>tbody>tr>td>div>div>div:nth-child(2)>div.fc-content-skeleton>table>tbody>tr:nth-child(1)>td.fc-event-container {
+    border: #b253f2;
+
+}
+
+.fc-view,
+.fc-view>table {
+    background-color: var(--azul_ppal);
+    background: linear-gradient(164deg, #fb8520 13%, #b06268 57%, #965782 97%);
+    box-shadow: rgba(73, 50, 93, 0.25) 0px 0.375em 0.75em -0.125, rgba(0, 0, 0, 0.3) 0px 0.188em 0.438em -0.188em;
+}
+
+
+/*ANIMACION DE JULIO 2023*/
+
+@keyframes text-color {
+    0% {
+        color: #1D438A;
+        opacity: 1;
+    }
+
+    25% {
+        color: #2452a7;
+        opacity: 1;
+    }
+
+    50% {
+        color: #2b63cd;
+        opacity: 1;
+    }
+
+    100% {
+        color: #3275f1;
+        opacity: 1;
+    }
+}
+
+
+/***************************Responsive*****************************/
+@media screen and (max-width:60em) {
+    main {
+        margin-bottom: 2em;
+    }
+}

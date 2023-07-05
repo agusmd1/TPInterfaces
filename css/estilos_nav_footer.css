@@ -1,0 +1,49 @@
+
+
+/* ESTILOS NAVBAR FOOTER*/
+
+.navbar {
+    background-color: #5237C7;
+    /* Fondo violeta */
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+.footer {
+background-color: #5137c7; /* Fondo del footer */
+padding: 20px 0;
+}
+
+.footer p {
+margin-bottom: 0;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer ul li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.footer ul li a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.footer ul li img {
+width: 20px;
+height: 20px;
+margin-right: 10px;
+}
