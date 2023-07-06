@@ -24,6 +24,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+
 .logo {
     width: 17%;
 }
@@ -162,6 +163,7 @@ footer a {
 .ocultar {
     display: none;
 }
+
 
 /***********para los resultados del buscador************/
 .resultados {

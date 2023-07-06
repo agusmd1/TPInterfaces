@@ -47,7 +47,7 @@ h4 {
 
 .carousel {
     display: flex;
-    background-color: var(--neutro);
+
     padding: 1.875em;
     align-items: center;
     justify-content: space-between;
@@ -151,37 +151,41 @@ li img {
 }
 
 /***************************Responsive*****************************/
-@media screen and (max-width: 60em){
+@media screen and (max-width: 60em) {
 
-    .producto_detalle{
-        margin-left:0;
+    .producto_detalle {
+        margin-left: 0;
         text-align: left;
-    
+
     }
-    .duracion{
+
+    .duracion {
         display: none;
     }
-.destacados{
-    flex-wrap: wrap;
-}
-.producto{
-    width: 300px;
-}
+
+    .destacados {
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        width: 300px;
+    }
 
 }
 
-@media screen and (max-width: 847px){
-    .medios_pago{
+@media screen and (max-width: 847px) {
+    .medios_pago {
         margin: 0;
         transform: scale(0.8);
     }
-    aside h3{
+
+    aside h3 {
         transform: scale(0.8);
     }
 }
 
-@media screen and (max-width: 600px){
-    .medios_pago{
+@media screen and (max-width: 600px) {
+    .medios_pago {
         margin: 0;
         transform: scale(0.6);
     }
